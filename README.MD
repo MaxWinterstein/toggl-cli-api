@@ -16,7 +16,13 @@ There are some plugins available for toggl, but none provided me a simple _"Just
 There are multiple ways to use this little thing.  
 I just run it as a docker container, e.g. on my synology. 
 
-All needed is your toggl API token, see below.
+All needed is your toggl API token, see below, and make it available as environment variable `TOGGL_TOKEN`.
+
+### Run as docker
+
+```bash
+docker run --rm -ti -e TOGGL_TOKEN=123abcddef -p 8080:80 ghcr.io/maxwinterstein/toggl-cli-api:main
+```
 
 ## Use with Elgato Strem Deck
 
