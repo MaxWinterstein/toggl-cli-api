@@ -1,13 +1,11 @@
 import os
 
 from fastapi import FastAPI
-from toggl import utils, api
 from fastapi.responses import RedirectResponse
-
 from fastapi_cache import FastAPICache
-from fastapi_cache.decorator import cache
 from fastapi_cache.backends.inmemory import InMemoryBackend
-
+from fastapi_cache.decorator import cache
+from toggl import api, utils
 
 app = FastAPI()
 

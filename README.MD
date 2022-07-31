@@ -14,7 +14,7 @@ There are some plugins available for toggl, but none provided me a simple _"Just
 ## Run `toggl-cli-api`
 
 There are multiple ways to use this little thing.  
-I just run it as a docker container, e.g. on my synology. 
+I just run it as a docker container, e.g. on my synology.
 
 All needed is your toggl API token, see below, and make it available as environment variable `TOGGL_TOKEN`.
 
@@ -27,10 +27,9 @@ docker run --rm -ti -e TOGGL_TOKEN=123abcddef -p 8080:80 ghcr.io/maxwinterstein/
 ### Run as docker-compose
 
 ```yaml
-version: '2.0'
+version: "2.0"
 
 services:
-
   toggl-cli-api:
     image: ghcr.io/maxwinterstein/toggl-cli-api:main
     environment:
@@ -38,7 +37,6 @@ services:
     restart: always
     ports:
       - 8880:80
-
 ```
 
 ## Use with Elgato Strem Deck
@@ -49,14 +47,15 @@ First you need to install the [API Request](https://github.com/mjbnz/streamdeck-
 Configuration is done like this:  
 ![](images/configuration.png)
 
-Adjust IP/hostname/port to your needs. 
+Adjust IP/hostname/port to your needs.
 
 ### Get yout toggl token
+
 See https://support.toggl.com/en/articles/3116844-where-is-my-api-key-located
 
 ## Restrictions
 
 For the moment its main purpose it to `continue` and `stop` the last running entry.  
-More features might be coming later. 
+More features might be coming later.
 
 Also the icons could be nicer. Not sure, but I hope they are open source 🤞.
