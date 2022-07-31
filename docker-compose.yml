@@ -1,0 +1,11 @@
+version: '2.0'
+
+services:
+
+  toggl-cli-api:
+    image: ghcr.io/maxwinterstein/toggl-cli-api:main
+    environment:
+      - TOGGL_TOKEN=123abcddef
+    restart: always
+    ports:
+      - 8880:80

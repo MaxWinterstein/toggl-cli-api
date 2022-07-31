@@ -24,6 +24,23 @@ All needed is your toggl API token, see below, and make it available as environm
 docker run --rm -ti -e TOGGL_TOKEN=123abcddef -p 8080:80 ghcr.io/maxwinterstein/toggl-cli-api:main
 ```
 
+### Run as docker-compose
+
+```yaml
+version: '2.0'
+
+services:
+
+  toggl-cli-api:
+    image: ghcr.io/maxwinterstein/toggl-cli-api:main
+    environment:
+      - TOGGL_TOKEN=123abcddef
+    restart: always
+    ports:
+      - 8880:80
+
+```
+
 ## Use with Elgato Strem Deck
 
 First you need to install the [API Request](https://github.com/mjbnz/streamdeck-api-request) plugin by [@mjbnz](https://github.com/mjbnz):  
