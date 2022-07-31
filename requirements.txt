@@ -1,0 +1,4 @@
+fastapi-cache2==0.1.8
+fastapi==0.78.0
+togglCli==2.4.3
+uvicorn==0.17.6
