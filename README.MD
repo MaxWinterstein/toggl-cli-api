@@ -58,4 +58,6 @@ See https://support.toggl.com/en/articles/3116844-where-is-my-api-key-located
 For the moment its main purpose it to `continue` and `stop` the last running entry.  
 More features might be coming later.
 
-Also the icons could be nicer. Not sure, but I hope they are open source 🤞.
+## Thx
+
+Thx to [@tobimori and his streamdeck-toggl](https://github.com/tobimori/streamdeck-toggl) that inspired me, showed me i have no clue of javascript and let me steal the icons. ❤️.
