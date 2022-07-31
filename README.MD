@@ -1,5 +1,7 @@
 # Toggl-Cli-API
 
+[![Docker](https://github.com/MaxWinterstein/toggl-cli-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/MaxWinterstein/toggl-cli-api/actions/workflows/docker-publish.yml)
+
 Simply fastapi based wrap around [toggl-cli](https://github.com/AuHau/toggl-cli) to be used e.g. as docker container.
 
 More designed like an RPC than API, but 🤷🏻‍♂️ .
