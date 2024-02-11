@@ -1,5 +1,5 @@
 fastapi-cache2==0.1.8
-fastapi==0.78.0
+fastapi==0.109.1
 togglCli==2.4.3
 uvicorn==0.17.6
 pendulum<3 ## else rust toolchain is required, no benefit here
