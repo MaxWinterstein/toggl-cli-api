@@ -51,7 +51,7 @@ Adjust IP/hostname/port to your needs.
 
 ### Get yout toggl token
 
-See https://support.toggl.com/en/articles/3116844-where-is-my-api-key-located
+See https://support.toggl.com/en-us/article/where-is-my-api-key-located-e9ki6p/
 
 ## Restrictions
 
