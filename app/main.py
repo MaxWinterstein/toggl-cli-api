@@ -77,5 +77,9 @@ async def stop():
 
 
 def stop_():
-    api.TimeEntry.objects.current(config=config).stop_and_save()
+    current = api.TimeEntry.objects.current(config=config)
+    # current() is None when nothing is running. Stopping an already stopped
+    # timer is a no-op, not an error.
+    if current is not None:
+        current.stop_and_save()
     return not_running_dict
