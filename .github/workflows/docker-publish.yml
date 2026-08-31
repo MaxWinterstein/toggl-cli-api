@@ -25,6 +25,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Without this the job gets the repository default, which is read/write on
+    # contents, issues, pull-requests, deployments and actions. All it does is
+    # check out and push to ghcr.
+    permissions:
+      contents: read
+      packages: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
